@@ -1,223 +1,231 @@
 /* ===================================================================
    Translations — EN / ZH / FR
-   Each key maps to a data-i18n attribute value in the HTML.
+   SEE the Green Future Summit (SEEGFS)
    =================================================================== */
 
 const translations = {
 
   /* ─── Navigation ─── */
-  "nav.about":        { en: "About",       zh: "关于",       fr: "À propos" },
-  "nav.mission":      { en: "Mission",     zh: "使命",       fr: "Mission" },
-  "nav.journey":      { en: "The Journey", zh: "历程",       fr: "Le Parcours" },
-  "nav.audience":     { en: "Who Joins",   zh: "参与者",     fr: "Participants" },
-  "nav.partner":      { en: "Partner",     zh: "合作",       fr: "Partenaires" },
+  "nav.about":        { en: "About",           zh: "关于",           fr: "À propos" },
+  "nav.structure":    { en: "Event Structure",  zh: "活动结构",       fr: "Programme" },
+  "nav.participants": { en: "Participants",     zh: "参与者",         fr: "Participants" },
+  "nav.see":          { en: "About SEE",        zh: "关于SEE",        fr: "À propos de SEE" },
+  "nav.partner":      { en: "Partner",          zh: "合作",           fr: "Partenaires" },
 
   /* ─── Hero ─── */
-  "hero.badge":       { en: "Inaugural Edition",  zh: "首届",                  fr: "Édition Inaugurale" },
-  "hero.t1":          { en: "China-Europe",        zh: "中欧",                  fr: "Chine-Europe" },
-  "hero.t2":          { en: "Green Strategy",      zh: "绿色战略",              fr: "Stratégie Verte" },
-  "hero.t3":          { en: "& Future Leadership", zh: "与未来领导力",          fr: "& Leadership du Futur" },
-  "hero.t4":          { en: "Summit",              zh: "峰会",                  fr: "Sommet" },
+  "hero.badge":       { en: "Inaugural Edition · Online Summit",  zh: "首届 · 线上峰会",           fr: "Édition Inaugurale · Sommet en Ligne" },
+  "hero.t1":          { en: "SEE the",           zh: "SEE",              fr: "SEE the" },
+  "hero.t2":          { en: "Green Future",      zh: "绿色未来",         fr: "Green Future" },
+  "hero.t3":          { en: "Summit",            zh: "峰会",             fr: "Summit" },
   "hero.subtitle":    {
-    en: "Bridging the next generation of strategic talent with Europe's foremost leaders in green economic strategy and policy.",
-    zh: "连接新一代战略人才与欧洲最杰出的绿色经济战略和政策领袖。",
-    fr: "Connecter la nouvelle génération de talents stratégiques avec les plus grands leaders européens en stratégie économique verte et politique."
+    en: "Where China's next-gen scholars meet Europe's leading green strategists.",
+    zh: "中国新一代学者与欧洲顶尖绿色战略家的交汇点。",
+    fr: "Là où la nouvelle génération de chercheurs chinois rencontre les stratèges verts européens."
   },
-  "hero.cta1":        { en: "Explore the Journey", zh: "探索历程",     fr: "Explorer le Parcours" },
-  "hero.cta2":        { en: "Become a Partner",    zh: "成为合作伙伴", fr: "Devenir Partenaire" },
-  "hero.loc1":        { en: "Suzhou",  zh: "苏州", fr: "Suzhou" },
-  "hero.loc2":        { en: "France",  zh: "法国", fr: "France" },
+  "hero.cta1":        { en: "Explore the Journey", zh: "探索历程",         fr: "Explorer le Parcours" },
+  "hero.cta2":        { en: "Contact Us",          zh: "联系我们",         fr: "Contactez-nous" },
+  "hero.org1":        { en: "GFS",    zh: "GFS",   fr: "GFS" },
+  "hero.org2":        { en: "SEE",    zh: "SEE",   fr: "SEE" },
   "hero.scroll":      { en: "Scroll to explore", zh: "向下滚动", fr: "Défiler pour explorer" },
 
   /* ─── About ─── */
-  "about.label":      { en: "Why This Summit",  zh: "为什么是这个峰会", fr: "Pourquoi ce Sommet" },
+  "about.label":      { en: "About the Summit",  zh: "关于峰会", fr: "À propos du Sommet" },
   "about.title":      {
-    en: "The Green Transition Demands <em>New Voices</em>",
-    zh: "绿色转型需要<em>新声音</em>",
-    fr: "La Transition Verte Exige de <em>Nouvelles Voix</em>"
+    en: "SEE the Green Future <em>Summit</em>",
+    zh: "SEE绿色未来<em>峰会</em>",
+    fr: "SEE the Green Future <em>Summit</em>"
   },
-  "about.p1":         {
-    en: "The global green transition sits at the intersection of economic transformation, policy-driven regulation, and geopolitical negotiation.",
-    zh: "全球绿色转型处于经济转型、政策驱动监管和地缘政治谈判的交汇点。",
-    fr: "La transition verte mondiale se situe à l'intersection de la transformation économique, de la régulation politique et de la négociation géopolitique."
+  "about.overview":   {
+    en: "An online summit by the Sino-European Exchange (SEE). Chinese scholars pitch green-transition ideas. European experts mentor, challenge, and guide them.",
+    zh: "由中欧交流协会（SEE）主办的线上峰会。中国学者提出绿色转型构想，欧洲专家指导、挑战并引领他们。",
+    fr: "Un sommet en ligne par le Sino-European Exchange (SEE). Les chercheurs chinois proposent des idées de transition verte. Les experts européens les accompagnent."
   },
-  "about.p2":         {
-    en: "While top-level diplomatic channels exist between China and Europe, there is a <strong>critical gap</strong> — no platform connects the next generation of strategic talent with current European policy leaders.",
-    zh: "虽然中欧之间存在高层外交渠道，但存在一个<strong>关键缺口</strong>——没有平台将下一代战略人才与当前的欧洲政策领袖联系起来。",
-    fr: "Bien que des canaux diplomatiques de haut niveau existent entre la Chine et l'Europe, il y a un <strong>manque critique</strong> — aucune plateforme ne connecte la prochaine génération de talents stratégiques avec les dirigeants politiques européens actuels."
+  "about.context.h":  { en: "Context",     zh: "背景",    fr: "Contexte" },
+  "about.context.p":  {
+    en: "Green transition = economics + regulation + geopolitics. China and Europe are the two biggest players. Collaboration isn't optional.",
+    zh: "绿色转型 = 经济 + 监管 + 地缘政治。中国和欧洲是两个最大的玩家。合作不是选择题。",
+    fr: "Transition verte = économie + régulation + géopolitique. La Chine et l'Europe sont les deux acteurs majeurs. La collaboration n'est pas optionnelle."
   },
-  "about.p3":         {
-    en: "This summit fills that void.",
-    zh: "本峰会填补了这一空白。",
-    fr: "Ce sommet comble ce vide."
+  "about.purpose.h":  { en: "Purpose",     zh: "宗旨",    fr: "Objectif" },
+  "about.purpose.p":  {
+    en: "Connect young Chinese scholars with European policy leaders. Build a platform for early-stage intellectual exchange with a global outlook.",
+    zh: "连接中国青年学者与欧洲政策领袖。构建具有全球视野的早期知识交流平台。",
+    fr: "Connecter les jeunes chercheurs chinois aux leaders politiques européens. Créer une plateforme d'échange intellectuel à vision mondiale."
+  },
+  "about.engagement.h": { en: "Engagement", zh: "参与",    fr: "Engagement" },
+  "about.engagement.p": {
+    en: "Chinese students get international exposure. European professionals discover China's next generation of strategic thinkers.",
+    zh: "中国学生获得国际视野。欧洲专业人士发现中国下一代战略思想家。",
+    fr: "Les étudiants chinois s'exposent à l'international. Les professionnels européens découvrent la relève stratégique chinoise."
   },
   "about.stat1.num":  { en: "2",  zh: "2",  fr: "2" },
   "about.stat1.label":{ en: "Continents", zh: "大洲", fr: "Continents" },
-  "about.stat2.num":  { en: "3",  zh: "3",  fr: "3" },
+  "about.stat2.num":  { en: "4",  zh: "4",  fr: "4" },
   "about.stat2.label":{ en: "Phases", zh: "阶段", fr: "Phases" },
-  "about.stat3.num":  { en: "∞",  zh: "∞",  fr: "∞" },
-  "about.stat3.label":{ en: "Opportunities", zh: "机遇", fr: "Opportunités" },
+  "about.stat3.num":  { en: "6",  zh: "6",  fr: "6" },
+  "about.stat3.label":{ en: "Finalist Teams", zh: "入围团队", fr: "Équipes Finalistes" },
+  "about.stat4.num":  { en: "∞",  zh: "∞",  fr: "∞" },
+  "about.stat4.label":{ en: "Opportunities", zh: "机遇", fr: "Opportunités" },
 
-  /* ─── Mission ─── */
-  "mission.label":    { en: "Our Purpose",       zh: "我们的宗旨",   fr: "Notre Objectif" },
-  "mission.title":    { en: "Mission & Vision",  zh: "使命与愿景",   fr: "Mission & Vision" },
-  "mission.card1.h":  { en: "Our Mission",       zh: "我们的使命",   fr: "Notre Mission" },
-  "mission.card1.p":  {
-    en: "To facilitate profound intellectual and strategic exchange between China and Europe, empowering young talent with real-world sustainability and economic policy insights.",
-    zh: "促进中欧之间深层的知识和战略交流，赋予青年人才可持续发展和经济政策的实战洞察力。",
-    fr: "Faciliter un échange intellectuel et stratégique profond entre la Chine et l'Europe, en donnant aux jeunes talents des perspectives concrètes en durabilité et politique économique."
+  /* ─── Structure ─── */
+  "structure.label":  { en: "Event Structure",            zh: "活动结构",               fr: "Structure de l'Événement" },
+  "structure.title":  {
+    en: "Four Phases to <em>Impact</em>",
+    zh: "四阶段迈向<em>影响力</em>",
+    fr: "Quatre Phases vers l'<em>Impact</em>"
   },
-  "mission.card2.h":  { en: "Our Vision",        zh: "我们的愿景",   fr: "Notre Vision" },
-  "mission.card2.p":  {
-    en: "To establish an annual, globally recognized youth platform for sustainability and policy — the premier pipeline for future leaders entering international organizations, top consulting firms, and policy institutions.",
-    zh: "建立一个年度、全球认可的青年可持续发展与政策平台——为未来进入国际组织、顶级咨询公司和政策机构的领导者提供首要通道。",
-    fr: "Établir une plateforme annuelle et mondialement reconnue pour la jeunesse autour de la durabilité et de la politique — le premier tremplin pour les futurs leaders des organisations internationales, des grands cabinets de conseil et des institutions politiques."
+  "structure.subtitle": {
+    en: "Research, mentorship, and high-level exchange — all online.",
+    zh: "研究、导师指导和高水平交流——全部在线。",
+    fr: "Recherche, mentorat et échanges de haut niveau — entièrement en ligne."
   },
 
-  /* ─── Journey — Phase 1 ─── */
-  "journey.label":    { en: "The Three-Phase Journey", zh: "三阶段历程",            fr: "Le Parcours en Trois Phases" },
-  "journey.title":    {
-    en: "From Research to <em>Reality</em>",
-    zh: "从研究到<em>实践</em>",
-    fr: "De la Recherche à la <em>Réalité</em>"
-  },
-  "journey.subtitle": {
-    en: "A selective, progressive competition culminating in an exclusive gathering in France.",
-    zh: "一场精选的、渐进式的竞赛，最终在法国举行高端聚会。",
-    fr: "Une compétition sélective et progressive culminant lors d'un rassemblement exclusif en France."
-  },
-  "phase1.tag":       { en: "Online",                     zh: "线上",                     fr: "En ligne" },
-  "phase1.h":         { en: "Policy Research Paper",      zh: "政策研究论文",              fr: "Article de Recherche Politique" },
-  "phase1.p":         {
-    en: "Candidates submit a rigorous policy research essay on Environment & Global Policy, focusing on Europe-China relations and the green economy.",
-    zh: "参赛者提交一篇关于环境与全球政策的严谨政策研究论文，重点关注中欧关系和绿色经济。",
-    fr: "Les candidats soumettent un essai rigoureux de recherche politique sur l'Environnement et la Politique mondiale, axé sur les relations Europe-Chine et l'économie verte."
-  },
-  "phase1.d1":        { en: "Written essay submission",           zh: "书面论文提交",         fr: "Soumission d'essai écrit" },
-  "phase1.d2":        { en: "Open to all qualified candidates",   zh: "面向所有合格候选人开放", fr: "Ouvert à tous les candidats qualifiés" },
-  "phase1.d3":        { en: "Top papers shortlisted for Phase 2", zh: "优秀论文入围第二阶段",   fr: "Les meilleurs articles présélectionnés pour la Phase 2" },
+  /* Phase 1 */
+  "phase1.tag":       { en: "Submission · 2 Weeks",       zh: "提交 · 2周",              fr: "Soumission · 2 Semaines" },
+  "phase1.h":         { en: "Submission",                  zh: "提交阶段",                fr: "Soumission" },
+  "phase1.d1":        { en: "3-min video presentation (clear, structured)",                zh: "3分钟视频演示（清晰、结构化）",              fr: "Présentation vidéo de 3 min (claire, structurée)" },
+  "phase1.d2":        { en: "1-page handout: problem, argument, strategy",                 zh: "1页讲义：问题、论点、策略",                   fr: "Document d'une page : problème, argument, stratégie" },
+  "phase1.d3":        { en: "Focus: green transition, China-Europe comparative lens",      zh: "聚焦：绿色转型，中欧比较视角",               fr: "Focus : transition verte, approche comparative Chine-Europe" },
 
-  /* ─── Journey — Phase 2 ─── */
-  "phase2.tag":       { en: "Suzhou, China",             zh: "中国苏州",               fr: "Suzhou, Chine" },
-  "phase2.h":         { en: "The Pitch Challenge",       zh: "路演挑战",               fr: "Le Défi Pitch" },
-  "phase2.p":         {
-    en: "Shortlisted candidates transform their research into a consulting-style pitch deck, presented before leading Chinese and French professors.",
-    zh: "入围候选人将其研究转化为咨询风格的路演方案，在中法教授面前展示。",
-    fr: "Les candidats présélectionnés transforment leur recherche en un pitch de style consulting, présenté devant des professeurs chinois et français de renom."
-  },
-  "phase2.d1":        { en: "Renmin University Suzhou Campus",        zh: "中国人民大学苏州校区",    fr: "Campus de Suzhou de l'Université Renmin" },
-  "phase2.d2":        { en: "10-min presentation + 5-min Q&A",       zh: "10分钟演讲 + 5分钟问答",  fr: "Présentation de 10 min + Q&R de 5 min" },
-  "phase2.d3":        { en: "Winners advance to the European Summit", zh: "优胜者晋级欧洲峰会",      fr: "Les gagnants accèdent au Sommet Européen" },
+  /* Phase 2 */
+  "phase2.tag":       { en: "Evaluation · 2 Weeks",       zh: "评审 · 2周",              fr: "Évaluation · 2 Semaines" },
+  "phase2.h":         { en: "Evaluation & Selection",      zh: "评审与选拔",              fr: "Évaluation & Sélection" },
+  "phase2.d1":        { en: "Panel of 5–10 European professors reviews submissions",      zh: "由5-10位欧洲教授组成的评审团",               fr: "Panel de 5 à 10 professeurs européens" },
+  "phase2.d2":        { en: "Top 6 teams selected with detailed feedback",                 zh: "选出前6强团队并给予详细反馈",                fr: "6 meilleures équipes sélectionnées avec retour détaillé" },
+  "phase2.d3":        { en: "Each team assigned a European mentor",                        zh: "每个团队配备欧洲导师",                       fr: "Chaque équipe se voit attribuer un mentor européen" },
 
-  /* ─── Journey — Phase 3 ─── */
-  "phase3.tag":       { en: "France — The Finale",       zh: "法国——总决赛",           fr: "France — La Finale" },
-  "phase3.h":         { en: "The European Summit",       zh: "欧洲峰会",               fr: "Le Sommet Européen" },
-  "phase3.p":         {
-    en: "Top teams travel to France to pitch their strategies to a board of esteemed European decision-makers, alongside keynote speeches and structured networking.",
-    zh: "顶尖团队前往法国，向欧洲知名决策者委员会展示他们的战略方案，同时参加主旨演讲和结构化社交活动。",
-    fr: "Les meilleures équipes se rendent en France pour présenter leurs stratégies à un panel de décideurs européens éminents, accompagnées de discours et de réseautage structuré."
-  },
-  "phase3.d1":        { en: "High-level keynotes by European leaders",         zh: "欧洲领袖高端主旨演讲",     fr: "Keynotes de haut niveau par des leaders européens" },
-  "phase3.d2":        { en: "Networking with decision-makers & peers",         zh: "与决策者和同行交流",       fr: "Réseautage avec décideurs et pairs" },
-  "phase3.d3":        { en: "Awards, mentorship & cross-cultural exchange",    zh: "颁奖、导师指导和跨文化交流", fr: "Prix, mentorat et échange interculturel" },
+  /* Phase 3 */
+  "phase3.tag":       { en: "Online Summit",               zh: "线上峰会",                fr: "Sommet en Ligne" },
+  "phase3.h":         { en: "The Online Summit",           zh: "线上峰会",                fr: "Le Sommet en Ligne" },
+  "phase3.d1":        { en: "Final presentations by selected teams",                       zh: "入选团队的最终展示",                         fr: "Présentations finales des équipes sélectionnées" },
+  "phase3.d2":        { en: "Q&A sessions with judges",                                    zh: "与评委的问答环节",                           fr: "Sessions de Q&R avec les juges" },
+  "phase3.d3":        { en: "Expert talks & panel discussions",                            zh: "专家演讲和小组讨论",                         fr: "Conférences d'experts et tables rondes" },
 
-  /* ─── Audience ─── */
-  "audience.label":   { en: "Who Joins",                            zh: "谁参加",                  fr: "Qui Participe" },
-  "audience.title":   {
+  /* Phase 4 */
+  "phase4.tag":       { en: "Post-Summit",                 zh: "峰会后",                  fr: "Post-Sommet" },
+  "phase4.h":         { en: "Post-Summit Development",     zh: "峰会后发展",              fr: "Développement Post-Sommet" },
+  "phase4.d1":        { en: "Continue developing work with mentor",                        zh: "与导师继续合作",                             fr: "Continuer le travail avec le mentor" },
+  "phase4.d2":        { en: "Further research opportunities",                              zh: "更多研究机会",                               fr: "Opportunités de recherche supplémentaires" },
+  "phase4.d3":        { en: "Ongoing academic & professional engagement",                  zh: "持续的学术和职业参与",                       fr: "Engagement académique et professionnel continu" },
+
+  /* ─── Participants ─── */
+  "participants.label": { en: "Participants",                     zh: "参与者",             fr: "Participants" },
+  "participants.title": {
     en: "Two Delegations, <em>One Vision</em>",
     zh: "两个代表团，<em>一个愿景</em>",
     fr: "Deux Délégations, <em>Une Vision</em>"
   },
-  "aud.cn.h":         { en: "Chinese Delegation",   zh: "中国代表团",    fr: "Délégation Chinoise" },
-  "aud.cn.role":      { en: "Competitors",           zh: "参赛者",        fr: "Compétiteurs" },
+  "aud.cn.h":         { en: "Chinese Delegation",                 zh: "中国代表团",          fr: "Délégation Chinoise" },
+  "aud.cn.role":      { en: "Idea-Sharers & Learners",            zh: "创意分享者与学习者",  fr: "Partageurs d'Idées & Apprenants" },
   "aud.cn.l1":        {
-    en: "Highly motivated university students & young scholars",
-    zh: "积极进取的大学生和青年学者",
-    fr: "Étudiants universitaires et jeunes chercheurs très motivés"
+    en: "<strong>Idea-sharers:</strong> Selected through competition, receive European-professor mentorship, present at the summit",
+    zh: "<strong>创意分享者：</strong>通过竞争选拔，获得欧洲教授指导，在峰会上展示",
+    fr: "<strong>Partageurs d'idées :</strong> Sélectionnés par compétition, mentorat de professeurs européens, présentent au sommet"
   },
   "aud.cn.l2":        {
-    en: "Strong academic backgrounds seeking international exposure",
-    zh: "具有优秀学术背景、寻求国际视野的人才",
-    fr: "Profils académiques solides recherchant une exposition internationale"
+    en: "<strong>Learners:</strong> Join keynotes, hear speeches, engage in discussions",
+    zh: "<strong>学习者：</strong>参加主旨演讲，听取讲座，参与讨论",
+    fr: "<strong>Apprenants :</strong> Participent aux keynotes, conférences et discussions"
   },
   "aud.cn.l3":        {
-    en: "Future professionals in consulting, public policy & sustainability",
-    zh: "未来从事咨询、公共政策和可持续发展的专业人才",
-    fr: "Futurs professionnels du conseil, de la politique publique et de la durabilité"
+    en: "University students & young scholars seeking international exposure",
+    zh: "寻求国际视野的大学生和青年学者",
+    fr: "Étudiants et jeunes chercheurs en quête d'exposition internationale"
   },
-  "aud.eu.h":         { en: "European Delegation",  zh: "欧洲代表团",    fr: "Délégation Européenne" },
-  "aud.eu.role":      { en: "Mentors & Observers",  zh: "导师与观察员",  fr: "Mentors & Observateurs" },
+  "aud.cn.l4":        {
+    en: "Future professionals in consulting, policy & sustainability",
+    zh: "咨询、政策和可持续发展领域的未来专业人士",
+    fr: "Futurs professionnels du conseil, de la politique et de la durabilité"
+  },
+  "aud.eu.h":         { en: "European Delegation",                zh: "欧洲代表团",          fr: "Délégation Européenne" },
+  "aud.eu.role":      { en: "Mentors & Observers",                zh: "导师与观察员",        fr: "Mentors & Observateurs" },
   "aud.eu.l1":        {
-    en: "Public officials, ESG consultants, researchers & think-tank leaders",
-    zh: "公共官员、ESG顾问、研究人员和智库领袖",
-    fr: "Fonctionnaires, consultants ESG, chercheurs et leaders de think tanks"
+    en: "<strong>Mentors & Speakers:</strong> Guide research, judge ideas, share expertise",
+    zh: "<strong>导师与演讲者：</strong>指导研究、评判创意、分享专业知识",
+    fr: "<strong>Mentors & Conférenciers :</strong> Guident la recherche, évaluent les idées, partagent leur expertise"
   },
   "aud.eu.l2":        {
-    en: "Key decision-makers in sustainability and policy",
-    zh: "可持续发展和政策领域的关键决策者",
-    fr: "Décideurs clés en durabilité et politique"
+    en: "<strong>Decision Makers:</strong> Public officials, ESG consultants, researchers, think-tank leaders",
+    zh: "<strong>决策者：</strong>公共官员、ESG顾问、研究人员、智库领袖",
+    fr: "<strong>Décideurs :</strong> Fonctionnaires, consultants ESG, chercheurs, leaders de think tanks"
   },
   "aud.eu.l3":        {
-    en: "Top students from Sciences Po, Sorbonne, HEC Paris & more",
-    zh: "来自巴黎政治学院、索邦大学、巴黎HEC等的优秀学生",
-    fr: "Étudiants de Sciences Po, Sorbonne, HEC Paris et d'autres grandes écoles"
+    en: "<strong>Student Observers:</strong> From Sciences Po, Sorbonne, HEC Paris — peer-to-peer exchange",
+    zh: "<strong>学生观察员：</strong>来自巴黎政治学院、索邦大学、HEC——同伴交流",
+    fr: "<strong>Étudiants Observateurs :</strong> Sciences Po, Sorbonne, HEC Paris — échange entre pairs"
   },
 
-  /* ─── Partner / Strengths ─── */
-  "partner.label":    { en: "Our Foundation",    zh: "我们的基础",   fr: "Nos Fondations" },
+  /* ─── About SEE ─── */
+  "see.label":        { en: "The Organization",           zh: "组织",                fr: "L'Organisation" },
+  "see.title":        {
+    en: "The Sino-European <em>Exchange</em>",
+    zh: "中欧<em>交流</em>协会",
+    fr: "Le Sino-European <em>Exchange</em>"
+  },
+  "see.subtitle":     {
+    en: "Bridging European and Chinese perspectives through intercultural dialogue.",
+    zh: "通过跨文化对话连接中欧视角。",
+    fr: "Relier les perspectives européennes et chinoises par le dialogue interculturel."
+  },
+  "see.intro":        {
+    en: "Empowering the next generation of Sino-European leaders to interact, learn, and cooperate across borders.",
+    zh: "赋能新一代中欧领袖跨越边界互动、学习与合作。",
+    fr: "Permettre à la prochaine génération de leaders sino-européens d'interagir, d'apprendre et de coopérer."
+  },
+
+  /* Pillars */
+  "pillars.1.h":      { en: "Green Future Summit",               zh: "绿色未来峰会",         fr: "Green Future Summit" },
+  "pillars.1.p":      {
+    en: "Our flagship event for green transition dialogue",
+    zh: "我们的旗舰绿色转型对话活动",
+    fr: "Notre événement phare pour le dialogue sur la transition verte"
+  },
+  "pillars.2.h":      { en: "Round-Table Dialogues",              zh: "圆桌对话",              fr: "Dialogues en Table Ronde" },
+  "pillars.2.p":      {
+    en: "Year-round expert discussions & youth forums",
+    zh: "全年专家讨论和青年论坛",
+    fr: "Discussions d'experts et forums jeunesse toute l'année"
+  },
+  "pillars.3.h":      { en: "Comparative Research",               zh: "比较研究",              fr: "Recherche Comparative" },
+  "pillars.3.p":      {
+    en: "Cross-cultural academic collaboration",
+    zh: "跨文化学术合作",
+    fr: "Collaboration académique interculturelle"
+  },
+
+  /* ─── Partner ─── */
+  "partner.label":    { en: "Get Involved",              zh: "参与合作",              fr: "S'Impliquer" },
   "partner.title":    {
-    en: "Built on <em>Strength</em>",
-    zh: "建基于<em>实力</em>",
-    fr: "Bâti sur la <em>Force</em>"
+    en: "Join Our <em>Mission</em>",
+    zh: "加入我们的<em>使命</em>",
+    fr: "Rejoignez Notre <em>Mission</em>"
   },
-  "str1.h":           { en: "Elite Institutional Pedigree",  zh: "顶尖院校背景",          fr: "Pedigree Institutionnel d'Élite" },
-  "str1.p":           {
-    en: "Strong ties to top-tier universities in both China and Europe.",
-    zh: "与中欧顶尖大学的紧密联系。",
-    fr: "Liens étroits avec les universités de premier rang en Chine et en Europe."
-  },
-  "str2.h":           { en: "High-Level Network",  zh: "高端人脉网络",  fr: "Réseau de Haut Niveau" },
-  "str2.p":           {
-    en: "Access to politicians, sustainability experts, and European decision-makers.",
-    zh: "与政治人士、可持续发展专家和欧洲决策者的联系。",
-    fr: "Accès à des politiciens, experts en durabilité et décideurs européens."
-  },
-  "str3.h":           { en: "Institutional Support",  zh: "机构支持",  fr: "Soutien Institutionnel" },
-  "str3.p":           {
-    en: "Potential backing from Sciences Po and established Chinese youth associations.",
-    zh: "来自巴黎政治学院和中国知名青年协会的潜在支持。",
-    fr: "Soutien potentiel de Sciences Po et d'associations de jeunesse chinoises établies."
-  },
-  "str4.h":           { en: "Execution Capability",  zh: "执行能力",  fr: "Capacité d'Exécution" },
-  "str4.p":           {
-    en: "Proven capacity to manage international educational events and logistics.",
-    zh: "成功管理国际教育活动和后勤保障的能力。",
-    fr: "Capacité prouvée à gérer des événements éducatifs internationaux et la logistique."
-  },
-
-  "cta.h":            { en: "Seeking Strategic Partners",   zh: "寻求战略合作伙伴",   fr: "Recherche de Partenaires Stratégiques" },
+  "cta.h":            { en: "Partner With Us",           zh: "与我们合作",            fr: "Devenez Partenaire" },
   "cta.p":            {
-    en: "We're looking for co-founders, operational partners, and sponsors who share our vision of cultivating the next generation of green leaders.",
-    zh: "我们正在寻找与我们共同培养下一代绿色领袖的联合创始人、运营合作伙伴和赞助商。",
-    fr: "Nous recherchons des co-fondateurs, des partenaires opérationnels et des sponsors partageant notre vision de former la prochaine génération de leaders verts."
+    en: "Academic institutions, corporate partners, and policy think tanks — let's build the future of Sino-European green leadership together.",
+    zh: "学术机构、企业伙伴和政策智库——让我们共同构建中欧绿色领导力的未来。",
+    fr: "Institutions académiques, partenaires corporatifs et think tanks — construisons ensemble l'avenir du leadership vert sino-européen."
   },
-  "cta.tag1":         { en: "China Operations & Co-Founding",  zh: "中国运营与联合创立",       fr: "Opérations Chine & Co-fondation" },
-  "cta.tag2":         { en: "Logistics & Venue Management",    zh: "后勤与场地管理",           fr: "Logistique & Gestion de Sites" },
-  "cta.tag3":         { en: "University Outreach",             zh: "高校推广",                 fr: "Relations Universitaires" },
-  "cta.tag4":         { en: "Speaker Engagement",              zh: "嘉宾邀请",                 fr: "Engagement de Conférenciers" },
-  "cta.tag5":         { en: "Branding & Communications",       zh: "品牌与传播",               fr: "Branding & Communication" },
-  "cta.tag6":         { en: "Sponsorship",                     zh: "赞助",                     fr: "Sponsoring" },
-  "cta.btn":          { en: "Get in Touch",                    zh: "联系我们",                 fr: "Contactez-nous" },
+  "cta.tag1":         { en: "Round-Tables",              zh: "圆桌会议",              fr: "Tables Rondes" },
+  "cta.tag2":         { en: "Research",                  zh: "研究",                  fr: "Recherche" },
+  "cta.tag3":         { en: "Keynotes",                  zh: "主旨演讲",              fr: "Keynotes" },
+  "cta.tag4":         { en: "Speakers",                  zh: "演讲者",                fr: "Conférenciers" },
+  "cta.tag5":         { en: "Sponsorship",               zh: "赞助",                  fr: "Sponsoring" },
+  "cta.tag6":         { en: "University Outreach",       zh: "高校推广",              fr: "Relations Universitaires" },
+  "cta.btn":          { en: "Contact Us",                zh: "联系我们",              fr: "Contactez-nous" },
+
+  /* ─── Modal ─── */
+  "modal.title":      { en: "Email the team now!",       zh: "现在就给团队发邮件！",  fr: "Contactez l'équipe !" },
 
   /* ─── Footer ─── */
   "footer.tagline":   {
-    en: "China-Europe Green Strategy & Future Leadership Summit",
-    zh: "中欧绿色战略与未来领导力峰会",
-    fr: "Sommet Chine-Europe Stratégie Verte & Leadership du Futur"
+    en: "SEE the Green Future Summit — The Sino-European Exchange",
+    zh: "SEE绿色未来峰会 — 中欧交流协会",
+    fr: "SEE the Green Future Summit — Le Sino-European Exchange"
   },
   "footer.copy":      {
-    en: "© 2026 CEGS Summit. Shaping the future of green leadership.",
-    zh: "© 2026 CEGS峰会。塑造绿色领导力的未来。",
-    fr: "© 2026 Sommet CEGS. Façonner l'avenir du leadership vert."
+    en: "© 2026 SEE the Green Future Summit. Shaping green leadership.",
+    zh: "© 2026 SEE绿色未来峰会。塑造绿色领导力。",
+    fr: "© 2026 SEE the Green Future Summit. Façonner le leadership vert."
   }
 };

@@ -1,5 +1,5 @@
 /* ===================================================================
-   China-Europe Green Strategy & Future Leadership Summit
+   SEE the Green Future Summit (SEEGFS)
    Interactive JavaScript + i18n Engine
    =================================================================== */
 
@@ -12,16 +12,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const LANG_FLAGS = { en: '🇬🇧', zh: '🇨🇳', fr: '🇫🇷' };
     const LANG_CODES = { en: 'EN', zh: '中文', fr: 'FR' };
     const LANG_TITLES = {
-        en: 'China-Europe Green Strategy & Future Leadership Summit',
-        zh: '中欧绿色战略与未来领导力峰会',
-        fr: 'Sommet Chine-Europe Stratégie Verte & Leadership du Futur'
+        en: 'SEE the Green Future Summit — Sino-European Exchange',
+        zh: 'SEE绿色未来峰会 — 中欧交流协会',
+        fr: 'SEE the Green Future Summit — Le Sino-European Exchange'
     };
 
-    let currentLang = localStorage.getItem('cegs-lang') || 'en';
+    let currentLang = localStorage.getItem('gfs-lang') || 'en';
 
     function setLanguage(lang) {
         currentLang = lang;
-        localStorage.setItem('cegs-lang', lang);
+        localStorage.setItem('gfs-lang', lang);
 
         // Add transition class
         document.body.classList.add('lang-transitioning');
@@ -197,10 +197,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const duration = Math.random() * 12 + 8;
         const delay = Math.random() * 6;
 
-        const isGold = Math.random() > 0.7;
-        const color = isGold
-            ? `rgba(251, 191, 36, ${Math.random() * 0.4 + 0.1})`
-            : `rgba(52, 211, 153, ${Math.random() * 0.4 + 0.1})`;
+        const rand = Math.random();
+        let color;
+        if (rand > 0.7) {
+            color = `rgba(251, 191, 36, ${Math.random() * 0.4 + 0.1})`;
+        } else if (rand > 0.4) {
+            color = `rgba(45, 212, 191, ${Math.random() * 0.4 + 0.1})`;
+        } else {
+            color = `rgba(52, 211, 153, ${Math.random() * 0.4 + 0.1})`;
+        }
 
         particle.style.cssText = `
             width: ${size}px;
@@ -289,36 +294,47 @@ document.addEventListener('DOMContentLoaded', () => {
     document.head.appendChild(style);
 
     // ========================
-    //  Strength cards stagger
+    //  Pillar & Focus card stagger
     // ========================
 
-    const strengthItems = document.querySelectorAll('.strength-item');
-    const observerStrength = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                const items = entry.target.parentElement.querySelectorAll('.strength-item');
-                items.forEach((item, i) => {
-                    setTimeout(() => {
-                        item.style.opacity = '1';
-                        item.style.transform = 'translateY(0)';
-                    }, i * 100);
-                });
-                observerStrength.unobserve(entry.target);
-            }
+    const staggerContainers = [
+        { selector: '.pillar-card', parentSelector: '.pillars-grid' }
+    ];
+
+    staggerContainers.forEach(({ selector, parentSelector }) => {
+        const items = document.querySelectorAll(selector);
+        if (items.length === 0) return;
+
+        const observerStagger = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    const parent = entry.target.closest(parentSelector);
+                    if (parent) {
+                        const children = parent.querySelectorAll(selector);
+                        children.forEach((item, i) => {
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'translateY(0)';
+                            }, i * 120);
+                        });
+                    }
+                    observerStagger.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.15
         });
-    }, {
-        threshold: 0.15
-    });
 
-    strengthItems.forEach(item => {
-        item.style.opacity = '0';
-        item.style.transform = 'translateY(24px)';
-        item.style.transition = 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
-    });
+        items.forEach(item => {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(24px)';
+            item.style.transition = 'all 0.6s cubic-bezier(0.16, 1, 0.3, 1)';
+        });
 
-    if (strengthItems.length > 0) {
-        observerStrength.observe(strengthItems[0]);
-    }
+        if (items.length > 0) {
+            observerStagger.observe(items[0]);
+        }
+    });
 
     // ========================
     //  Stat counter animation
@@ -349,4 +365,39 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.5 });
 
     statNumbers.forEach(el => observerStats.observe(el));
+
+    // ========================
+    //  Contact Modal
+    // ========================
+
+    const contactModal = document.getElementById('contactModal');
+    const modalClose = document.getElementById('modalClose');
+    const contactBtn = document.getElementById('contactBtn');
+    const contactBtnPartner = document.getElementById('contactBtnPartner');
+
+    function openModal() {
+        contactModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        contactModal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    if (contactBtn) contactBtn.addEventListener('click', openModal);
+    if (contactBtnPartner) contactBtnPartner.addEventListener('click', openModal);
+    if (modalClose) modalClose.addEventListener('click', closeModal);
+
+    // Close on overlay click
+    contactModal.addEventListener('click', (e) => {
+        if (e.target === contactModal) closeModal();
+    });
+
+    // Close on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && contactModal.classList.contains('active')) {
+            closeModal();
+        }
+    });
 });
