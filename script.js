@@ -31,7 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelectorAll('[data-i18n]').forEach(el => {
                 const key = el.getAttribute('data-i18n');
                 if (translations[key] && translations[key][lang]) {
-                    el.textContent = translations[key][lang];
+                // Use innerHTML instead of textContent if it has data-i18n-html
+                // Actually, since we need strong tags, let's just use innerHTML for everything safely or specifically for data-i18n-html.
+                // Wait, if I change textContent to innerHTML here, it will affect all normal data-i18n tags. That is perfectly fine since the translations are trusted.
+                el.innerHTML = translations[key][lang];
                 }
             });
 
@@ -394,10 +397,62 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.target === contactModal) closeModal();
     });
 
-    // Close on escape key
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && contactModal.classList.contains('active')) {
-            closeModal();
-        }
-    });
+    // ========================
+    //  Logo PNG Downloader
+    // ========================
+    const downloadLogoLink = document.getElementById('downloadLogoLink');
+    if (downloadLogoLink) {
+        downloadLogoLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            const width = 1024;
+            const height = 341;
+            const canvas = document.createElement('canvas');
+            canvas.width = width;
+            canvas.height = height;
+            const ctx = canvas.getContext('2d');
+            
+            const svgString = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 36" width="${width}" height="${height}">
+                <defs>
+                    <linearGradient id="gfs-leaf-grad-export" x1="15" y1="10" x2="85" y2="70">
+                        <stop offset="0%" stop-color="#10b981" />
+                        <stop offset="100%" stop-color="#059669" />
+                    </linearGradient>
+                    <linearGradient id="gfs-text-grad-export" x1="44" y1="0" x2="86" y2="0" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#10b981" />
+                        <stop offset="100%" stop-color="#059669" />
+                    </linearGradient>
+                </defs>
+                <g transform="scale(0.36)">
+                    <path d="M50 12 C30 12 15 28 15 50 C15 68 28 80 48 83 C49 81 51 81 52 83 C72 80 85 68 85 48 C85 28 70 12 50 12Z" fill="url(#gfs-leaf-grad-export)" stroke="#059669" stroke-width="2" stroke-linejoin="round" />
+                    <path d="M50 15 L50 78" stroke="#059669" stroke-width="2.5" stroke-linecap="round" />
+                    <path d="M50 35 C40 31 30 35 24 40" stroke="#059669" stroke-width="1.5" stroke-linecap="round" fill="none" />
+                    <path d="M50 50 C60 46 70 48 76 52" stroke="#059669" stroke-width="1.5" stroke-linecap="round" fill="none" />
+                    <path d="M50 65 C42 61 34 62 26 66" stroke="#059669" stroke-width="1.5" stroke-linecap="round" fill="none" />
+                </g>
+                <text x="44" y="26" fill="url(#gfs-text-grad-export)" font-family="'Outfit', sans-serif" font-weight="700" font-size="20px" letter-spacing="0.08em">GFS</text>
+            </svg>`;
+            
+            const svgBlob = new Blob([svgString], { type: 'image/svg+xml;charset=utf-8' });
+            const URL = window.URL || window.webkitURL || window;
+            const blobURL = URL.createObjectURL(svgBlob);
+            
+            const img = new Image();
+            img.onload = () => {
+                ctx.clearRect(0, 0, width, height);
+                ctx.drawImage(img, 0, 0, width, height);
+                
+                const pngURL = canvas.toDataURL('image/png');
+                const downloadLink = document.createElement('a');
+                downloadLink.href = pngURL;
+                downloadLink.download = 'gfs-logo.png';
+                document.body.appendChild(downloadLink);
+                downloadLink.click();
+                document.body.removeChild(downloadLink);
+                
+                URL.revokeObjectURL(blobURL);
+            };
+            img.src = blobURL;
+        });
+    }
 });

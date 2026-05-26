@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>SEE the Green Future Summit</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/reset.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/reveal.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/theme/white.css">
+
+        <!-- Fonts matching the website -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 12 C30 12 15 28 15 50 C15 68 28 80 48 83 C49 81 51 81 52 83 C72 80 85 68 85 48 C85 28 70 12 50 12Z' fill='%2310b981' stroke='%23059669' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M50 15 L50 78' stroke='%23059669' stroke-width='2.5' stroke-linecap='round'/%3E%3Cpath d='M50 35 C40 31 30 35 24 40' stroke='%23059669' stroke-width='1.5' stroke-linecap='round' fill='none'/%3E%3Cpath d='M50 50 C60 46 70 48 76 52' stroke='%23059669' stroke-width='1.5' stroke-linecap='round' fill='none'/%3E%3Cpath d='M50 65 C42 61 34 62 26 66' stroke='%23059669' stroke-width='1.5' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
+
+		<style>
+			:root {
+				--r-main-font: 'Outfit', sans-serif;
+				--r-heading-font: 'Outfit', sans-serif;
+				--r-background-color: #f5f2eb;
+				--r-main-color: #122b1e;
+				--r-heading-color: #122b1e;
+				--r-link-color: #0a6a4f;
+				--r-selection-background-color: #0a6a4f;
+                --green-300: #6ee7b7;
+                --green-400: #34d399;
+                --green-500: #10b981;
+                --green-600: #059669;
+			}
+
+            .reveal .slide-background {
+                background: radial-gradient(circle at center, #f5f2eb 0%, #eae6dc 100%);
+            }
+
+            .reveal h1, .reveal h2, .reveal h3 {
+                font-weight: 700;
+                letter-spacing: -0.02em;
+                text-transform: none;
+            }
+
+            .reveal h1 { font-size: 3.5em; line-height: 1.1; margin-bottom: 20px;}
+            .reveal h2 { font-size: 2.2em; margin-bottom: 30px;}
+            
+            .reveal p {
+                font-size: 1.1em;
+                font-weight: 400;
+                color: #2f4035;
+                line-height: 1.5;
+            }
+
+            /* Handwritten Touches */
+            .hand-drawn {
+                font-family: 'Caveat', cursive !important;
+                color: var(--green-400);
+            }
+            .hand-title {
+                font-family: 'Caveat', cursive !important;
+                font-size: 1.2em;
+                color: var(--green-400);
+                letter-spacing: 0.05em;
+            }
+
+            .accent {
+                color: var(--green-500);
+            }
+
+            /* Glassmorphism Cards */
+            .glass-card {
+                background: rgba(229, 234, 230, 0.85);
+                border: 1px solid rgba(10, 106, 79, 0.15);
+                border-radius: 24px;
+                padding: 30px;
+                backdrop-filter: blur(10px);
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            }
+
+            /* Split Layouts */
+            .split-container {
+                display: flex;
+                gap: 30px;
+                justify-content: space-between;
+                align-items: stretch;
+                margin-top: 30px;
+            }
+            .split-card {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: left;
+            }
+            .split-card h3 {
+                font-size: 1.4em;
+                margin-bottom: 10px;
+            }
+
+            /* Timeline Phases */
+            .phase-box {
+                text-align: left;
+                padding: 20px;
+                border-left: 3px solid var(--green-500);
+                background: #e5eae6;
+                margin-bottom: 15px;
+                border-radius: 0 12px 12px 0;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            }
+            .phase-box h4 {
+                margin: 0 0 5px 0;
+                color: var(--green-600);
+                font-size: 1.2em;
+            }
+            .phase-meta {
+                color: #576b5d;
+                font-size: 1em;
+                font-weight: 500;
+                margin-bottom: 10px;
+            }
+
+            /* Lists */
+            .reveal ul {
+                list-style-type: none;
+                padding: 0;
+            }
+            .reveal ul li {
+                font-size: 1.1em;
+                font-weight: 400;
+                color: #2f4035;
+                margin-bottom: 12px;
+                position: relative;
+                padding-left: 35px;
+                text-align: left;
+            }
+            .reveal ul li::before {
+                content: "→";
+                color: var(--green-400);
+                position: absolute;
+                left: 0;
+                font-weight: 700;
+            }
+
+            .supporter-list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                margin-top: 15px;
+            }
+            .supporter-item {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                color: #334155;
+                text-decoration: none;
+                font-size: 1.1em;
+            }
+            .supporter-item img {
+                width: 40px;
+                height: 40px;
+                border-radius: 8px;
+                margin: 0 !important;
+                background: white;
+                object-fit: contain;
+                padding: 2px;
+                mix-blend-mode: darken;
+            }
+
+            .logo-header {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 15px;
+                margin-bottom: 30px;
+            }
+            .logo-header img {
+                height: 50px;
+                margin: 0 !important;
+            }
+		</style>
+	</head>
+	<body>
+    <!-- Master SVG Icon Definitions -->
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="gfs-leaf-grad" x1="15" y1="10" x2="85" y2="70">
+                <stop offset="0%" stop-color="#10b981" />
+                <stop offset="100%" stop-color="#059669" />
+            </linearGradient>
+            <linearGradient id="gfs-text-grad" x1="44" y1="0" x2="86" y2="0" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#10b981" />
+                <stop offset="100%" stop-color="#059669" />
+            </linearGradient>
+        </defs>
+        <symbol id="gfs-logo-symbol" viewBox="0 0 108 36">
+            <!-- Organic Asymmetrical Leaf + Accompanying GFS Text -->
+            <g transform="scale(0.36)">
+                <path d="M50 12 C30 12 15 28 15 50 C15 68 28 80 48 83 C49 81 51 81 52 83 C72 80 85 68 85 48 C85 28 70 12 50 12Z" fill="url(#gfs-leaf-grad)" stroke="#059669" stroke-width="2" stroke-linejoin="round" />
+                <path d="M50 15 L50 78" stroke="#059669" stroke-width="2.5" stroke-linecap="round" />
+                <path d="M50 35 C40 31 30 35 24 40" stroke="#059669" stroke-width="1.5" stroke-linecap="round" fill="none" />
+                <path d="M50 50 C60 46 70 48 76 52" stroke="#059669" stroke-width="1.5" stroke-linecap="round" fill="none" />
+                <path d="M50 65 C42 61 34 62 26 66" stroke="#059669" stroke-width="1.5" stroke-linecap="round" fill="none" />
+            </g>
+            <text x="44" y="26" fill="url(#gfs-text-grad)" font-family="'Outfit', sans-serif" font-weight="700" font-size="20px" letter-spacing="0.08em">GFS</text>
+        </symbol>
+    </svg>
+
+		<div class="reveal">
+			<div class="slides">
+
+				<!-- Slide 1: Title -->
+				<section data-transition="fade">
+                    <div class="logo-header" style="display: flex; align-items: center; justify-content: center; gap: 15px;">
+                        <svg class="gfs-logo-svg" width="120" height="40" style="color: #122b1e;">
+                            <use href="#gfs-logo-symbol"></use>
+                        </svg>
+                        <span style="color:#576b5d; font-size:1.5rem;">|</span>
+                        <img src="see-logo.png" alt="SEE" style="background:#e5eae6; padding:5px; border-radius:5px; height: 30px;">
+                    </div>
+					<h1><span class="hand-drawn">SEE the</span> <span class="accent">Green Future</span> <em>Summit</em></h1>
+					<p style="margin-top: 30px; font-size:1.3em;">Where China's next-gen scholars meet Europe's leading green strategists.</p>
+				</section>
+
+				<!-- Slide 2: About -->
+				<section data-transition="slide">
+					<h2 class="hand-title">About the Summit</h2>
+					<h2>SEE the Green Future</h2>
+                    <div class="glass-card">
+					    <p style="font-size: 1.25em; line-height: 1.6; text-align: center;">
+                            An online summit by the <strong>Sino-European Exchange (SEE)</strong>.<br><br>
+                            Chinese scholars pitch <strong>green-transition ideas</strong> to European experts who <strong>mentor, challenge, and guide</strong> them — building bridges between the two largest forces shaping the global green transition.
+                        </p>
+                    </div>
+				</section>
+
+				<!-- Slide 3: Structure P1 -->
+				<section data-transition="slide">
+					<h2 class="hand-title">Event Structure</h2>
+					<h2>Four Phases to Impact (1/2)</h2>
+                    
+                    <div class="split-container">
+                        <div class="phase-box" style="flex:1;">
+                            <h4>01. Submission</h4>
+                            <div class="phase-meta">📍 Online &nbsp;|&nbsp; ⏱ 2 Weeks</div>
+                            <ul>
+                                <li>3-min video presentation (clear, structured)</li>
+                                <li>1-page handout: problem, argument, strategy</li>
+                                <li>Focus: green transition, China-Europe comparative lens</li>
+                            </ul>
+                        </div>
+                        <div class="phase-box" style="flex:1;">
+                            <h4>02. Evaluation & Selection</h4>
+                            <div class="phase-meta">📍 Online &nbsp;|&nbsp; ⏱ 2 Weeks</div>
+                            <ul>
+                                <li>Panel of 5–10 European mentors reviews submissions</li>
+                                <li>Top 6 teams selected with detailed feedback</li>
+                                <li>Each team assigned a European mentor</li>
+                            </ul>
+                        </div>
+                    </div>
+				</section>
+
+                <!-- Slide 4: Structure P2 -->
+				<section data-transition="slide">
+					<h2 class="hand-title">Event Structure</h2>
+					<h2>Four Phases to Impact (2/2)</h2>
+                    
+                    <div class="split-container">
+                        <div class="phase-box" style="flex:1;">
+                            <h4>03. The Online Summit</h4>
+                            <div class="phase-meta">📍 Online (Zoom) &nbsp;|&nbsp; ⏱ 1 Day</div>
+                            <ul>
+                                <li>Final presentations by selected teams</li>
+                                <li>Q&A sessions with judges</li>
+                                <li>Expert talks & panel discussions</li>
+                            </ul>
+                        </div>
+                        <div class="phase-box" style="flex:1;">
+                            <h4>04. Post-Summit Development</h4>
+                            <div class="phase-meta">📍 Online &nbsp;|&nbsp; ⏱ ∞</div>
+                            <ul>
+                                <li>Continue developing work with mentor</li>
+                                <li>Further research opportunities</li>
+                                <li>Ongoing academic & professional engagement</li>
+                            </ul>
+                        </div>
+                    </div>
+				</section>
+
+				<!-- Slide 5: Participants -->
+				<section data-transition="slide">
+                    <h2 class="hand-title">Participants</h2>
+					<h2>Two Delegations, One Vision</h2>
+                    <div class="split-container">
+                        <div class="glass-card split-card">
+                            <h3>🇨🇳 Chinese Delegation</h3>
+                            <p style="font-size: 1.2em; color: var(--green-400); font-weight:600;">Idea Sharers + Observers</p>
+                            <ul>
+                                <li>Selected through competition, receive mentorship, present at summit</li>
+                                <li>Join keynotes, attend expert talks</li>
+                                <li>University students & young scholars</li>
+                            </ul>
+                        </div>
+                        <div class="glass-card split-card">
+                            <h3>🇪🇺 European Delegation</h3>
+                            <p style="font-size: 1.2em; color: var(--green-400); font-weight:600;">Mentors + Observers</p>
+                            <ul>
+                                <li>Guide research, judge ideas, share expertise</li>
+                                <li>Public officials, ESG consultants, researchers</li>
+                                <li>Students from Sciences Po, Sorbonne, HEC Paris</li>
+                            </ul>
+                        </div>
+                    </div>
+				</section>
+
+				<!-- Slide 6: Organisation -->
+				<section data-transition="zoom">
+                    <h2 class="hand-title">The Organisation</h2>
+					<h2>The Sino-European Exchange</h2>
+                    <div class="glass-card">
+                        <p style="text-align: center; font-size:1.2em; margin-bottom: 30px;">
+                            SEE is a student-led organisation dedicated to fostering <strong>meaningful dialogue</strong> between China and Europe.
+                        </p>
+                        <ul style="max-width: 800px; margin: 0 auto;">
+                            <li><strong class="accent">Bridging Cultures:</strong> Genuine intellectual exchange breaking down stereotypes.</li>
+                            <li><strong class="accent">Developing Leaders:</strong> Nurturing young thinkers capable of navigating both policy landscapes.</li>
+                            <li><strong class="accent">Building Understanding:</strong> Mutual understanding is a necessity in an increasingly complex world.</li>
+                        </ul>
+                    </div>
+				</section>
+
+                <!-- Slide 6.5: Supporters -->
+				<section data-transition="slide">
+                    <h2 class="hand-title">The Organisation</h2>
+					<h2>Our Current Supporters</h2>
+                    <div class="split-container">
+                        <div class="phase-box" style="flex:1;">
+                            <h4>Mentors</h4>
+                            <div class="supporter-list">
+                                <a href="https://www.linkedin.com/in/gael-jeanson-61b2a294" class="supporter-item">🔗 Gael Jeanson</a>
+                                <a href="https://www.linkedin.com/in/benjaminabtan" class="supporter-item">🔗 Benjamin Abtan</a>
+                                <a href="https://www.linkedin.com/in/alexis-texier-21b297164" class="supporter-item">🔗 Alexis Texier</a>
+                            </div>
+                            <p style="font-size: 0.9em; font-style:italic; color:#64748b; margin-top:20px;">More coming... 😉</p>
+                        </div>
+                        <div class="phase-box" style="flex:1;">
+                            <h4>Institutions</h4>
+                            <div class="supporter-list">
+                                <div class="supporter-item" style="align-items:flex-start;">
+                                    <img src="havrais-dire-logo.jpg" alt="Havrais Dire" style="margin-top:5px !important;">
+                                    <div style="display:flex; flex-direction:column;">
+                                        <span style="font-weight:600;">Havrais Dire (Sciences Po Le Havre)</span>
+                                        <span style="font-size:0.8em; color:#64748b; margin-top:2px; line-height:1.3;">A student association at Sciences Po Le Havre dedicated to promoting student dialogue and intellectual curiosity.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p style="font-size: 0.9em; font-style:italic; color:#64748b; margin-top:20px;">More coming... 😉</p>
+                        </div>
+                    </div>
+				</section>
+
+                <!-- Slide 7: Partner -->
+				<section data-transition="fade">
+					<h1 class="hand-drawn">Partner With Us</h1>
+					<p style="margin-top: 20px; font-size:1.3em; max-width:800px; margin-left:auto; margin-right:auto;">
+                        Whether you're an academic institution, a corporate partner, or a policy think tank — there's a place for you in shaping the next generation of Sino-European green leaders. <strong>Let's build something meaningful together.</strong>
+                    </p>
+                    <div style="margin-top: 40px; display:flex; justify-content:center; gap:15px; flex-wrap:wrap;">
+                        <span style="background:rgba(16,185,129,0.1); padding:8px 16px; border-radius:50px; color:var(--green-600); font-size:0.9em; border:1px solid rgba(16,185,129,0.3);">Round-Tables</span>
+                        <span style="background:rgba(16,185,129,0.1); padding:8px 16px; border-radius:50px; color:var(--green-600); font-size:0.9em; border:1px solid rgba(16,185,129,0.3);">Research</span>
+                        <span style="background:rgba(16,185,129,0.1); padding:8px 16px; border-radius:50px; color:var(--green-600); font-size:0.9em; border:1px solid rgba(16,185,129,0.3);">Keynotes</span>
+                        <span style="background:rgba(16,185,129,0.1); padding:8px 16px; border-radius:50px; color:var(--green-600); font-size:0.9em; border:1px solid rgba(16,185,129,0.3);">Speakers</span>
+                    </div>
+				</section>
+
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.6.0/reveal.js"></script>
+		<script>
+			Reveal.initialize({
+				hash: true,
+                center: true,
+                controls: true,
+                progress: true,
+                transition: 'slide'
+			});
+		</script>
+	</body>
+</html>

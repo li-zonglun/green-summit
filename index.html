@@ -1,30 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEE the Green Future Summit — Sino-European Exchange</title>
-    <meta name="description" content="SEE the Green Future Summit (SEEGFS) is an online academic summit bridging China's brightest young scholars with Europe's foremost professionals in green economic strategy and policy.">
-    <meta name="keywords" content="SEE, Green Future Summit, SEEGFS, Sino-European Exchange, Green Transition, Sustainability, China, Europe, Policy, Youth">
+    <meta name="description"
+        content="SEE the Green Future Summit (SEEGFS) is an online academic summit bridging China's brightest young scholars with Europe's foremost professionals in green economic strategy and policy.">
+    <meta name="keywords"
+        content="SEE, Green Future Summit, SEEGFS, Sino-European Exchange, Green Transition, Sustainability, China, Europe, Policy, Youth">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 12 C30 12 15 28 15 50 C15 68 28 80 48 83 C49 81 51 81 52 83 C72 80 85 68 85 48 C85 28 70 12 50 12Z' fill='%2310b981' stroke='%23059669' stroke-width='2' stroke-linejoin='round'/%3E%3Cpath d='M50 15 L50 78' stroke='%23059669' stroke-width='2.5' stroke-linecap='round'/%3E%3Cpath d='M50 35 C40 31 30 35 24 40' stroke='%23059669' stroke-width='1.5' stroke-linecap='round' fill='none'/%3E%3Cpath d='M50 50 C60 46 70 48 76 52' stroke='%23059669' stroke-width='1.5' stroke-linecap='round' fill='none'/%3E%3Cpath d='M50 65 C42 61 34 62 26 66' stroke='%23059669' stroke-width='1.5' stroke-linecap='round' fill='none'/%3E%3C/svg%3E">
 </head>
+
 <body>
+    <!-- Master SVG Icon Definitions -->
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="gfs-leaf-grad" x1="15" y1="10" x2="85" y2="70">
+                <stop offset="0%" stop-color="#10b981" />
+                <stop offset="100%" stop-color="#059669" />
+            </linearGradient>
+            <linearGradient id="gfs-text-grad" x1="44" y1="0" x2="86" y2="0" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stop-color="#10b981" />
+                <stop offset="100%" stop-color="#059669" />
+            </linearGradient>
+        </defs>
+        <symbol id="gfs-logo-symbol" viewBox="0 0 108 36">
+            <!-- Organic Asymmetrical Leaf + Accompanying GFS Text -->
+            <g transform="scale(0.36)">
+                <path d="M50 12 C30 12 15 28 15 50 C15 68 28 80 48 83 C49 81 51 81 52 83 C72 80 85 68 85 48 C85 28 70 12 50 12Z" fill="url(#gfs-leaf-grad)" stroke="#059669" stroke-width="2" stroke-linejoin="round" />
+                <path d="M50 15 L50 78" stroke="#059669" stroke-width="2.5" stroke-linecap="round" />
+                <path d="M50 35 C40 31 30 35 24 40" stroke="#059669" stroke-width="1.5" stroke-linecap="round" fill="none" />
+                <path d="M50 50 C60 46 70 48 76 52" stroke="#059669" stroke-width="1.5" stroke-linecap="round" fill="none" />
+                <path d="M50 65 C42 61 34 62 26 66" stroke="#059669" stroke-width="1.5" stroke-linecap="round" fill="none" />
+            </g>
+            <text x="44" y="26" fill="url(#gfs-text-grad)" font-family="'Outfit', sans-serif" font-weight="700" font-size="20px" letter-spacing="0.08em">GFS</text>
+        </symbol>
+    </svg>
+
     <!-- Navigation -->
     <nav id="navbar" class="navbar">
         <div class="nav-container">
-            <a href="#hero" class="nav-logo">
-                <span class="logo-icon">🌿</span>
-                <span class="logo-text">GFS</span>
+            <a href="#hero" class="nav-logo" style="display: flex; align-items: center;">
+                <svg class="gfs-logo-svg" width="96" height="36">
+                    <use href="#gfs-logo-symbol"></use>
+                </svg>
             </a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#about" class="nav-link" data-i18n="nav.about">About</a></li>
                 <li><a href="#structure" class="nav-link" data-i18n="nav.structure">Event Structure</a></li>
                 <li><a href="#participants" class="nav-link" data-i18n="nav.participants">Participants</a></li>
-                <li><a href="#see" class="nav-link" data-i18n="nav.see">About SEE</a></li>
-                <li><a href="#partner" class="nav-link" data-i18n="nav.partner">Partner</a></li>
+                <li><a href="#see" class="nav-link" data-i18n="nav.see">Organisation</a></li>
+                <li><a href="#partner" class="nav-link nav-cta-btn" data-i18n="nav.partner">Partner with us</a></li>
             </ul>
             <div class="nav-right">
                 <!-- Language Switcher -->
@@ -33,7 +66,8 @@
                         <span class="lang-flag" id="langFlag">🇬🇧</span>
                         <span class="lang-code" id="langCode">EN</span>
                         <svg class="lang-chevron" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
                         </svg>
                     </button>
                     <div class="lang-dropdown" id="langDropdown">
@@ -69,8 +103,8 @@
                 <span data-i18n="hero.badge">Inaugural Edition · Online Summit</span>
             </div>
             <h1 class="hero-title animate-in">
-                <span class="title-line" data-i18n="hero.t1">SEE the</span>
-                <span class="title-line accent" data-i18n="hero.t2">Green Future</span>
+                <span class="title-line hand-drawn-text" data-i18n="hero.t1">SEE the</span>
+                <span class="title-line accent hand-underline" data-i18n="hero.t2">Green Future</span>
                 <span class="title-line italic" data-i18n="hero.t3">Summit</span>
             </h1>
             <p class="hero-subtitle animate-in" data-i18n="hero.subtitle">
@@ -78,16 +112,18 @@
             </p>
             <div class="hero-cta animate-in">
                 <a href="#structure" class="btn btn-primary" data-i18n="hero.cta1">Explore the Journey</a>
+                <a href="#partner" class="btn btn-accent-cta" data-i18n="hero.cta_partner">Partner with us →</a>
                 <button class="btn btn-outline" id="contactBtn" data-i18n="hero.cta2">Contact Us</button>
             </div>
             <div class="hero-orgs animate-in">
                 <div class="org-badge">
-                    <span class="org-icon">🌿</span>
-                    <span class="org-label" data-i18n="hero.org1">GFS</span>
+                    <svg class="gfs-logo-svg" width="84" height="28">
+                        <use href="#gfs-logo-symbol"></use>
+                    </svg>
                 </div>
                 <div class="org-divider"></div>
                 <div class="org-badge">
-                    <span class="org-icon see-icon">🔗</span>
+                    <img src="see-logo.png" alt="SEE" class="see-logo-img see-logo-sm">
                     <span class="org-label" data-i18n="hero.org2">SEE</span>
                 </div>
             </div>
@@ -103,12 +139,19 @@
         <div class="container">
             <div class="section-header reveal-up">
                 <span class="section-label center" data-i18n="about.label">About the Summit</span>
-                <h2 class="section-title center" data-i18n-html="about.title">SEE the Green Future <em>Summit</em></h2>
+                <h2 class="section-title center hand-underline-center" data-i18n-html="about.title">SEE the Green Future
+                    <em>Summit</em></h2>
             </div>
 
             <div class="about-overview reveal-up">
                 <div class="about-overview-card">
-                    <p class="about-lead" data-i18n="about.overview">An online summit by the Sino-European Exchange (SEE). Chinese scholars pitch green-transition ideas. European experts mentor, challenge, and guide them.</p>
+                    <div class="about-quote-mark">“</div>
+                    <p class="about-lead" data-i18n="about.overview">An online summit by the Sino-European Exchange
+                        (SEE). Chinese scholars pitch green-transition ideas to European experts who mentor, challenge,
+                        and guide them — building bridges between the two largest forces shaping the global green
+                        transition.</p>
+                    <div class="about-quote-mark-end">”</div>
+                    <div class="about-doodle-arrow"></div>
                 </div>
             </div>
 
@@ -116,17 +159,20 @@
                 <div class="about-pillar reveal-left">
                     <div class="pillar-icon">🌍</div>
                     <h3 data-i18n="about.context.h">Context</h3>
-                    <p data-i18n="about.context.p">Green transition = economics + regulation + geopolitics. China and Europe are the two biggest players. Collaboration isn't optional.</p>
+                    <p data-i18n="about.context.p">Green transition = economics + regulation + geopolitics. China and
+                        Europe are the two biggest players. Collaboration isn't optional.</p>
                 </div>
                 <div class="about-pillar reveal-up">
                     <div class="pillar-icon">🎯</div>
                     <h3 data-i18n="about.purpose.h">Purpose</h3>
-                    <p data-i18n="about.purpose.p">Connect young Chinese scholars with European policy leaders. Build a platform for early-stage intellectual exchange with a global outlook.</p>
+                    <p data-i18n="about.purpose.p">Connect young Chinese scholars with European policy leaders. Build a
+                        platform for early-stage intellectual exchange with a global outlook.</p>
                 </div>
                 <div class="about-pillar reveal-right">
                     <div class="pillar-icon">🤝</div>
                     <h3 data-i18n="about.engagement.h">Engagement</h3>
-                    <p data-i18n="about.engagement.p">Chinese students get international exposure. European professionals discover China's next generation of strategic thinkers.</p>
+                    <p data-i18n="about.engagement.p">Chinese students get international exposure. European
+                        professionals discover China's next generation of strategic thinkers.</p>
                 </div>
             </div>
 
@@ -156,7 +202,8 @@
         <div class="container">
             <span class="section-label center" data-i18n="structure.label">Event Structure</span>
             <h2 class="section-title center" data-i18n-html="structure.title">Four Phases to <em>Impact</em></h2>
-            <p class="section-subtitle center" data-i18n="structure.subtitle">Research, mentorship, and high-level exchange — all online.</p>
+            <p class="section-subtitle center" data-i18n="structure.subtitle">Research, mentorship, and high-level
+                exchange — all online.</p>
 
             <div class="timeline">
                 <!-- Phase 1 -->
@@ -165,8 +212,9 @@
                         <span class="phase-number">01</span>
                     </div>
                     <div class="timeline-card">
-                        <div class="phase-tag submission" data-i18n="phase1.tag">Submission · 2 Weeks</div>
-                        <h3 data-i18n="phase1.h">Submission</h3>
+                        <div class="phase-tag submission" data-i18n="phase1.tag">Submission</div>
+                        <div class="phase-meta"><span class="phase-location">📍 Online</span><span
+                                class="phase-duration">⏱ 2 Weeks</span></div>
                         <div class="phase-details">
                             <div class="detail">
                                 <span class="detail-icon">🎬</span>
@@ -178,7 +226,8 @@
                             </div>
                             <div class="detail">
                                 <span class="detail-icon">🎯</span>
-                                <span data-i18n="phase1.d3">Focus: green transition, China-Europe comparative lens</span>
+                                <span data-i18n="phase1.d3">Focus: green transition, China-Europe comparative
+                                    lens</span>
                             </div>
                         </div>
                     </div>
@@ -190,12 +239,13 @@
                         <span class="phase-number">02</span>
                     </div>
                     <div class="timeline-card">
-                        <div class="phase-tag evaluation" data-i18n="phase2.tag">Evaluation · 2 Weeks</div>
-                        <h3 data-i18n="phase2.h">Evaluation & Selection</h3>
+                        <div class="phase-tag evaluation" data-i18n="phase2.tag">Evaluation & Selection</div>
+                        <div class="phase-meta"><span class="phase-location">📍 Online</span><span
+                                class="phase-duration">⏱ 2 Weeks</span></div>
                         <div class="phase-details">
                             <div class="detail">
                                 <span class="detail-icon">🏆</span>
-                                <span data-i18n="phase2.d1">Panel of 5–10 European professors reviews submissions</span>
+                                <span data-i18n="phase2.d1">Panel of 5–10 European mentors reviews submissions</span>
                             </div>
                             <div class="detail">
                                 <span class="detail-icon">💬</span>
@@ -215,8 +265,9 @@
                         <span class="phase-number">03</span>
                     </div>
                     <div class="timeline-card featured">
-                        <div class="phase-tag summit-tag" data-i18n="phase3.tag">Online Summit</div>
-                        <h3 data-i18n="phase3.h">The Online Summit</h3>
+                        <div class="phase-tag summit-tag" data-i18n="phase3.tag">The Online Summit</div>
+                        <div class="phase-meta"><span class="phase-location">📍 Online (Zoom)</span><span
+                                class="phase-duration">⏱ 1 Day</span></div>
                         <div class="phase-details">
                             <div class="detail">
                                 <span class="detail-icon">🎤</span>
@@ -240,8 +291,9 @@
                         <span class="phase-number">04</span>
                     </div>
                     <div class="timeline-card">
-                        <div class="phase-tag post-summit" data-i18n="phase4.tag">Post-Summit</div>
-                        <h3 data-i18n="phase4.h">Post-Summit Development</h3>
+                        <div class="phase-tag post-summit" data-i18n="phase4.tag">Post-Summit Development</div>
+                        <div class="phase-meta"><span class="phase-location">📍 Online</span><span
+                                class="phase-duration">⏱ ∞</span></div>
                         <div class="phase-details">
                             <div class="detail">
                                 <span class="detail-icon">🔬</span>
@@ -266,33 +318,61 @@
     <section id="participants" class="section participants">
         <div class="container">
             <span class="section-label center" data-i18n="participants.label">Participants</span>
-            <h2 class="section-title center" data-i18n-html="participants.title">Two Delegations, <em>One Vision</em></h2>
+            <h2 class="section-title center hand-underline-center" data-i18n-html="participants.title">Two Delegations,
+                <em>One Vision</em></h2>
 
             <div class="audience-grid">
                 <div class="audience-card reveal-left">
                     <div class="audience-header china">
                         <span class="audience-flag">🇨🇳</span>
                         <h3 data-i18n="aud.cn.h">Chinese Delegation</h3>
-                        <span class="audience-role" data-i18n="aud.cn.role">Idea-Sharers & Learners</span>
+                        <span class="audience-role" data-i18n="aud.cn.role">Idea Sharers + Observers</span>
                     </div>
-                    <ul class="audience-list">
-                        <li data-i18n-html="aud.cn.l1"><strong>Idea-sharers:</strong> Selected through competition, receive European-professor mentorship, present at the summit</li>
-                        <li data-i18n-html="aud.cn.l2"><strong>Learners:</strong> Join keynotes, hear speeches, engage in discussions</li>
-                        <li data-i18n="aud.cn.l3">University students & young scholars seeking international exposure</li>
-                        <li data-i18n="aud.cn.l4">Future professionals in consulting, policy & sustainability</li>
-                    </ul>
+                    <div class="audience-roles-split">
+                        <div class="role-group">
+                            <span class="role-badge role-badge-primary" data-i18n="aud.cn.badge1">🎯 Idea Sharers</span>
+                            <ul class="audience-list">
+                                <li data-i18n="aud.cn.l1">Selected through competition, receive mentorship from European
+                                    mentors, and present at the summit</li>
+                                <li data-i18n="aud.cn.l2">University students & young scholars with research in green
+                                    transition</li>
+                            </ul>
+                        </div>
+                        <div class="role-group">
+                            <span class="role-badge role-badge-secondary" data-i18n="aud.cn.badge2">👁 Observers</span>
+                            <ul class="audience-list">
+                                <li data-i18n="aud.cn.l3">Join keynotes, attend expert talks, and engage in discussions
+                                </li>
+                                <li data-i18n="aud.cn.l4">Future professionals in consulting, policy & sustainability
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <div class="audience-card reveal-right">
                     <div class="audience-header europe">
                         <span class="audience-flag">🇪🇺</span>
                         <h3 data-i18n="aud.eu.h">European Delegation</h3>
-                        <span class="audience-role" data-i18n="aud.eu.role">Mentors & Observers</span>
+                        <span class="audience-role" data-i18n="aud.eu.role">Mentors + Observers</span>
                     </div>
-                    <ul class="audience-list">
-                        <li data-i18n-html="aud.eu.l1"><strong>Mentors & Speakers:</strong> Guide research, judge ideas, share expertise</li>
-                        <li data-i18n-html="aud.eu.l2"><strong>Decision Makers:</strong> Public officials, ESG consultants, researchers, think-tank leaders</li>
-                        <li data-i18n-html="aud.eu.l3"><strong>Student Observers:</strong> From Sciences Po, Sorbonne, HEC Paris — peer-to-peer exchange</li>
-                    </ul>
+                    <div class="audience-roles-split">
+                        <div class="role-group">
+                            <span class="role-badge role-badge-primary" data-i18n="aud.eu.badge1">🎓 Mentors</span>
+                            <ul class="audience-list">
+                                <li data-i18n="aud.eu.l1">Guide research, judge ideas, and share expertise as speakers
+                                </li>
+                                <li data-i18n="aud.eu.l2">Public officials, ESG consultants, researchers, and think-tank
+                                    leaders</li>
+                            </ul>
+                        </div>
+                        <div class="role-group">
+                            <span class="role-badge role-badge-secondary" data-i18n="aud.eu.badge2">👁 Observers</span>
+                            <ul class="audience-list">
+                                <li data-i18n="aud.eu.l3">Students from Sciences Po, Sorbonne, HEC Paris for
+                                    peer-to-peer exchange</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -301,31 +381,94 @@
     <!-- About SEE Section -->
     <section id="see" class="section see-section">
         <div class="container">
-            <span class="section-label center" data-i18n="see.label">The Organization</span>
-            <h2 class="section-title center" data-i18n-html="see.title">The Sino-European <em>Exchange</em></h2>
-            <p class="section-subtitle center" data-i18n="see.subtitle">Bridging European and Chinese perspectives through intercultural dialogue.</p>
+            <span class="section-label center" data-i18n="see.label">The Organisation</span>
+            <h2 class="section-title center hand-underline-center" data-i18n-html="see.title">The Sino-European
+                <em>Exchange</em></h2>
 
             <div class="see-compact reveal-up">
-                <div class="see-intro">
-                    <p data-i18n="see.intro">Empowering the next generation of Sino-European leaders to interact, learn, and cooperate across borders.</p>
+                <div class="see-value-card">
+                    <h3 class="see-value-heading" data-i18n="see.mission.h">Our Mission</h3>
+                    <p data-i18n="see.mission.p">SEE (the Sino-European Exchange) is a student-led organisation
+                        dedicated to fostering meaningful dialogue between China and Europe. We believe that the next
+                        generation of leaders must be equipped with cross-cultural competence to navigate an
+                        increasingly interconnected world.</p>
                 </div>
-                <div class="pillars-grid">
-                    <div class="pillar-card">
-                        <div class="pillar-number">01</div>
-                        <h4 data-i18n="pillars.1.h">Green Future Summit</h4>
-                        <p data-i18n="pillars.1.p">Our flagship event for green transition dialogue</p>
+                <div class="see-values-grid">
+                    <div class="see-val-item reveal-left">
+                        <div class="see-val-icon">🌍</div>
+                        <h4 data-i18n="see.val1.h">Bridging Cultures</h4>
+                        <p data-i18n="see.val1.p">We create spaces where Chinese and European students and professionals
+                            engage in genuine intellectual exchange, breaking down stereotypes and building lasting
+                            connections.</p>
                     </div>
-                    <div class="pillar-card">
-                        <div class="pillar-number">02</div>
-                        <h4 data-i18n="pillars.2.h">Round-Table Dialogues</h4>
-                        <p data-i18n="pillars.2.p">Year-round expert discussions & youth forums</p>
+                    <div class="see-val-item reveal-up">
+                        <div class="see-val-icon">🌱</div>
+                        <h4 data-i18n="see.val2.h">Developing Leaders</h4>
+                        <p data-i18n="see.val2.p">Through summits, research collaborations, and mentorship programmes,
+                            we nurture young thinkers who can operate confidently across both Chinese and European
+                            policy landscapes.</p>
                     </div>
-                    <div class="pillar-card">
-                        <div class="pillar-number">03</div>
-                        <h4 data-i18n="pillars.3.h">Comparative Research</h4>
-                        <p data-i18n="pillars.3.p">Cross-cultural academic collaboration</p>
+                    <div class="see-val-item reveal-right">
+                        <div class="see-val-icon">🤝</div>
+                        <h4 data-i18n="see.val3.h">Building Understanding</h4>
+                        <p data-i18n="see.val3.p">In a world of increasing complexity between China and Europe, mutual
+                            understanding isn't a luxury — it's a necessity. SEE provides the platform to make it
+                            happen.</p>
                     </div>
                 </div>
+            </div>
+            <div class="supporters-section reveal-up">
+                <h3 class="supporters-title" data-i18n="see.supporters.title">Our Current Supporters</h3>
+
+                <div class="supporters-grid">
+                    <div class="supporters-col">
+                        <h4 data-i18n="see.supporters.professors">Mentors</h4>
+                        <div class="supporter-list">
+                            <a href="https://www.linkedin.com/in/gael-jeanson-61b2a294" target="_blank"
+                                class="supporter-prof">
+                                <img src="gael.jpg" alt="Gaël Jeanson" class="prof-avatar">
+                                <div class="prof-info">
+                                    <span class="prof-name">Gaël Jeanson</span>
+                                    <span class="prof-desc" data-i18n-html="see.supporters.prof1">Energy and Climate Advisor at the Danish Embassy in France<br><span style="display:block; margin-top:4px; font-size:0.92em; opacity:0.85;">Alumnus of Sciences Po Paris</span></span>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/benjaminabtan" target="_blank" class="supporter-prof">
+                                <img src="benjamin.jpg" alt="Benjamin Abtan" class="prof-avatar">
+                                <div class="prof-info">
+                                    <span class="prof-name">Benjamin Abtan</span>
+                                    <span class="prof-desc" data-i18n-html="see.supporters.prof2">Lecturer at Sciences Po Paris & ESCP Business School<br><span style="display:block; margin-top:4px; font-size:0.92em; opacity:0.85;">President of the European Grassroots Antiracist Movement (EGAM)</span></span>
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/alexis-texier-21b297164" target="_blank"
+                                class="supporter-prof">
+                                <img src="alexis.jpg" alt="Alexis Texier" class="prof-avatar">
+                                <div class="prof-info">
+                                    <span class="prof-name">Alexis Texier</span>
+                                    <span class="prof-desc" data-i18n-html="see.supporters.prof3">Doctoral Student at Panthéon-Sorbonne University<br><span style="display:block; margin-top:4px; font-size:0.92em; opacity:0.85;">Research Fellow in European Affairs</span></span>
+                                </div>
+                            </a>
+                        </div>
+                        <p class="more-coming" data-i18n="see.supporters.more">More coming... 😉</p>
+                    </div>
+
+                    <div class="supporters-col">
+                        <h4 data-i18n="see.supporters.institutions">Institutions</h4>
+                        <div class="supporter-inst-list">
+                            <div class="supporter-inst">
+                                <img src="havrais-dire-logo.jpg" alt="Havrais Dire" class="inst-logo">
+                                <div class="inst-info">
+                                    <span class="supporter-name">Havrais Dire (Sciences Po Le Havre)</span>
+                                    <span class="inst-desc" data-i18n="see.supporters.inst1_desc"
+                                        style="display:block; font-size:0.9em; color:var(--text-muted); margin-top:4px; line-height:1.4;">A
+                                        student association at Sciences Po Le Havre dedicated to promoting student dialogue
+                                        and intellectual curiosity.</span>
+                                </div>
+                            </div>
+                        <p class="more-coming" data-i18n="see.supporters.more">More coming... 😉</p>
+                    </div>
+                </div>
+
+
             </div>
         </div>
     </section>
@@ -334,11 +477,25 @@
     <section id="partner" class="section partner">
         <div class="container">
             <span class="section-label center" data-i18n="partner.label">Get Involved</span>
-            <h2 class="section-title center" data-i18n-html="partner.title">Join Our <em>Mission</em></h2>
+            <h2 class="section-title center hand-underline-center" data-i18n-html="partner.title">Partner <em>With
+                    Us</em></h2>
 
             <div class="cta-block reveal-up">
-                <h3 data-i18n="cta.h">Partner With Us</h3>
-                <p data-i18n="cta.p">Academic institutions, corporate partners, and policy think tanks — let's build the future of Sino-European green leadership together.</p>
+                <div class="cta-warmth">
+                    <span class="cta-hand-wave">👋</span>
+                    <h3 data-i18n="cta.h">We'd love to work with you</h3>
+                </div>
+                <p data-i18n="cta.p">Whether you're an academic institution, a corporate partner, or a policy think tank
+                    — there's a place for you in shaping the next generation of Sino-European green leaders. Let's build
+                    something meaningful together.</p>
+                <div class="partner-benefits">
+                    <div class="benefit-item" data-i18n="cta.b1">✨ Access to a curated network of young scholars and
+                        European professionals</div>
+                    <div class="benefit-item" data-i18n="cta.b2">🌐 Visibility across China and Europe's academic
+                        communities</div>
+                    <div class="benefit-item" data-i18n="cta.b3">🌱 Shape the conversation on green transition and
+                        sustainability policy</div>
+                </div>
                 <div class="partner-needs">
                     <span class="need-tag" data-i18n="cta.tag1">Round-Tables</span>
                     <span class="need-tag" data-i18n="cta.tag2">Research</span>
@@ -347,7 +504,8 @@
                     <span class="need-tag" data-i18n="cta.tag5">Sponsorship</span>
                     <span class="need-tag" data-i18n="cta.tag6">University Outreach</span>
                 </div>
-                <button class="btn btn-primary btn-large" id="contactBtnPartner" data-i18n="cta.btn">Contact Us</button>
+                <button class="btn btn-accent-cta btn-large" id="contactBtnPartner" data-i18n="cta.btn">Reach out to us
+                    →</button>
             </div>
         </div>
     </section>
@@ -376,15 +534,20 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <span class="logo-icon">🌿</span>
-                    <span class="logo-text">GFS</span>
-                    <p class="footer-tagline" data-i18n="footer.tagline">SEE the Green Future Summit — The Sino-European Exchange for the Future</p>
+                    <div style="display: flex; align-items: center; gap: 10px;">
+                        <svg class="gfs-logo-svg" width="64" height="24">
+                            <use href="#gfs-logo-symbol"></use>
+                        </svg>
+                        <span class="footer-divider">·</span>
+                        <img src="see-logo.png" alt="SEE" class="see-logo-img see-logo-xs">
+                    </div>
+                    <p class="footer-tagline" data-i18n="footer.tagline">SEE the Green Future Summit — The Sino-European Exchange</p>
                 </div>
                 <div class="footer-links">
                     <a href="#about" data-i18n="nav.about">About</a>
                     <a href="#structure" data-i18n="nav.structure">Event Structure</a>
                     <a href="#participants" data-i18n="nav.participants">Participants</a>
-                    <a href="#see" data-i18n="nav.see">About SEE</a>
+                    <a href="#see" data-i18n="nav.see">Organisation</a>
                     <a href="#partner" data-i18n="nav.partner">Partner</a>
                 </div>
             </div>
@@ -397,4 +560,5 @@
     <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
