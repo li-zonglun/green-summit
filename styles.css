@@ -1805,16 +1805,17 @@ em {
     .nav-links {
         position: fixed;
         inset: 0;
-        background: rgba(10, 26, 20, 0.97);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
+        background: rgba(245, 242, 235, 0.97);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 12px;
+        gap: 8px;
         opacity: 0;
         pointer-events: none;
-        transition: opacity 0.4s;
+        transition: opacity 0.35s var(--ease-out);
+        border-top: 2px solid rgba(10, 106, 79, 0.15);
     }
 
     .nav-links.open {
@@ -1839,8 +1840,21 @@ em {
     }
 
     .nav-link {
-        font-size: 1.2rem;
-        padding: 12px 24px;
+        font-size: 1.25rem;
+        font-weight: 500;
+        padding: 14px 32px;
+        color: var(--text-primary);
+        border-radius: 12px;
+        width: 80%;
+        text-align: center;
+        border: 1px solid transparent;
+        transition: all 0.2s;
+    }
+
+    .nav-link:hover {
+        background: var(--bg-secondary);
+        border-color: var(--border);
+        color: var(--accent);
     }
 
     .section-label {
@@ -1857,6 +1871,42 @@ em {
 
     .about-grid-3 {
         grid-template-columns: 1fr;
+    }
+
+    .supporters-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .supporters-col {
+        padding: 22px 18px;
+    }
+
+    .see-values-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .supporter-prof {
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .prof-avatar {
+        width: 42px;
+        height: 42px;
+        flex-shrink: 0;
+    }
+
+    .inst-logo {
+        width: 48px;
+        height: 48px;
+        flex-shrink: 0;
+    }
+
+    .supporter-inst {
+        flex-wrap: wrap;
+        align-items: flex-start;
     }
 
     .timeline {
@@ -1958,7 +2008,24 @@ em {
     .looking-ahead {
         padding: 20px 18px;
     }
+
     .see-value-card {
         padding: 28px 18px;
+    }
+
+    .supporters-col h4 {
+        font-size: 1.1rem;
+    }
+
+    .prof-name {
+        font-size: 0.95rem;
+    }
+
+    .prof-desc {
+        font-size: 0.8rem;
+    }
+
+    .supporters-title {
+        font-size: 1.5rem;
     }
 }

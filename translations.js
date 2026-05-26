@@ -77,7 +77,7 @@ const translations = {
   },
   "structure.subtitle": {
     en: "Research, mentorship, and high-level exchange — all online.",
-    zh: "研究、导师指导和高水平交流——全部在线。",
+    zh: "研究、指导与高水平交流——全程线上进行。",
     fr: "Recherche, mentorat et échanges de haut niveau — entièrement en ligne."
   },
 
@@ -96,7 +96,7 @@ const translations = {
   "phase2.d3":        { en: "Each team assigned a European mentor",                        zh: "每个团队配备欧洲导师",                       fr: "Chaque équipe se voit attribuer un mentor européen" },
 
   /* Phase 3 */
-  "phase3.tag":       { en: "The Online Summit",          zh: "在线峰会",                fr: "Le Sommet en Ligne" },
+  "phase3.tag":       { en: "The Online Summit",          zh: "线上峰会",                fr: "Le Sommet en Ligne" },
   "phase3.h":         { en: "The Online Summit",           zh: "线上峰会",                fr: "Le Sommet en Ligne" },
   "phase3.d1":        { en: "Final presentations by selected teams",                       zh: "入选团队的最终展示",                         fr: "Présentations finales des équipes sélectionnées" },
   "phase3.d2":        { en: "Q&A sessions with judges",                                    zh: "与评委的问答环节",                           fr: "Sessions de Q&R avec les juges" },
