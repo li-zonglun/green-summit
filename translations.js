@@ -164,7 +164,7 @@ const translations = {
     zh: "在中欧关系日益复杂的国际背景下，建设性的沟通至关重要。SEE提供了一个<strong>严谨、协作的平台</strong>，以促成这一关键的对话进程。",
     fr: "Dans un monde de plus en plus complexe entre la Chine et l'Europe, la compréhension mutuelle n'est pas un luxe\u200a\u2014\u200a<strong>c'est une nécessité</strong>. SEE fournit la plateforme pour y parvenir."
   },
-  "see.supporters.title": { en: "Our Current Supporters", zh: "我们的支持者", fr: "Nos Soutiens Actuels" },
+  "see.supporters.title": { en: "Examples of Some of our Supporters", zh: "部分支持者代表", fr: "Quelques Exemples de nos Soutiens" },
   "see.supporters.professors": { en: "Mentors", zh: "导师", fr: "Mentors" },
   "see.supporters.prof1": {
     en: "Energy and Climate Advisor at the Danish Embassy in France<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>Alumnus of Sciences Po Paris</span>",
@@ -172,23 +172,28 @@ const translations = {
     fr: "Conseiller Énergie et Climat à l'Ambassade du Danemark en France<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>Alumnus de Sciences Po Paris</span>"
   },
   "see.supporters.prof2": {
-    en: "Lecturer at Sciences Po Paris & ESCP Business School<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>President of the European Grassroots Antiracist Movement (EGAM)</span>",
-    zh: "巴黎政治学院与ESCP商学院讲师<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>欧洲草根反种族主义运动 (EGAM) 主席</span>",
-    fr: "Enseignant à Sciences Po Paris & ESCP Business School<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>Président du Mouvement Antiraciste Européen (EGAM)</span>"
+    en: "Ex-Advisor to the USG, Alliance of Civilizations at the UN<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>Lecturer at Sciences Po Paris &amp; ESCP Business School</span>",
+    zh: "前联合国文明联盟副秘书长顾问<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>巴黎政治学院与ESCP商学院讲师</span>",
+    fr: "Ex-Conseiller du Sous-Secrétaire Général, Alliance des Civilisations à l'ONU<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>Enseignant à Sciences Po Paris &amp; ESCP Business School</span>"
   },
   "see.supporters.prof3": {
-    en: "Doctoral Student at Panthéon-Sorbonne University<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>Research Fellow in European Affairs</span>",
-    zh: "巴黎第一大学 (先贤祠-索邦大学) 博士研究生<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>欧洲事务研究员</span>",
-    fr: "Doctorant à l'Université Panthéon-Sorbonne<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>Chercheur en Affaires Européennes</span>"
+    en: "Doctoral Researcher in Molecular Quantum Dynamics",
+    zh: "分子量子动力学方向博士研究员",
+    fr: "Chercheur Doctoral en Dynamique Quantique Moléculaire"
   },
   "see.supporters.institutions": { en: "Institutions", zh: "合作机构", fr: "Institutions" },
-  "see.supporters.inst1": { en: "Havrais Dire (Sciences Po Le Havre)", zh: "Havrais Dire (巴黎政治学院勒阿弗尔校区)", fr: "Havrais Dire (Sciences Po Le Havre)" },
+  "see.supporters.inst1": { en: "Havrais Dire (Sciences Po Le Havre)", zh: "Havrais Dire（巴黎政治学院勒阿弗尔校区）", fr: "Havrais Dire (Sciences Po Le Havre)" },
   "see.supporters.inst1_desc": { 
       en: "A student association at Sciences Po Le Havre dedicated to promoting student dialogue and intellectual curiosity.", 
-      zh: "巴黎政治学院勒阿弗尔校区的学生社团，致力于促进学生对话与激发求知欲。", 
+      zh: "巴黎政治学院勒阿弗尔校区的学生社团，致力于推动学生间的思想交流与学术探究。", 
       fr: "Une association étudiante de Sciences Po Le Havre dédiée à la promotion du dialogue étudiant et de la curiosité intellectuelle." 
   },
-  "see.supporters.more": { en: "More coming... 😉", zh: "更多支持者即将揭晓... 😉", fr: "D'autres à venir... 😉" },
+  "see.supporters.inst2": { en: "Asia Pacific Research Circle (APRC)", zh: "亚太研究圈（APRC）", fr: "Asia Pacific Research Circle (APRC)" },
+  "see.supporters.inst2_desc": {
+      en: "A student-led think tank producing rigorous, policy-relevant research on the Asia-Pacific region.",
+      zh: "一家由学生主导的智库，专注于亚太地区的政策研究。",
+      fr: "Un think tank étudiant produisant des recherches rigoureuses et pertinentes sur la région Asie-Pacifique."
+  },
  
   /* ─── Partner ─── */
   "partner.label":    { en: "Get Involved",              zh: "参与合作",              fr: "S'Impliquer" },
