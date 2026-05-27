@@ -167,9 +167,9 @@ const translations = {
   "see.supporters.title": { en: "Examples of Some of our Supporters", zh: "部分支持者代表", fr: "Quelques Exemples de nos Soutiens" },
   "see.supporters.professors": { en: "Mentors", zh: "导师", fr: "Mentors" },
   "see.supporters.prof1": {
-    en: "Energy and Climate Advisor at the Danish Embassy in France<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>Alumnus of Sciences Po Paris</span>",
-    zh: "丹麦驻法大使馆能源与气候顾问<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>巴黎政治学院校友</span>",
-    fr: "Conseiller Énergie et Climat à l'Ambassade du Danemark en France<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>Alumnus de Sciences Po Paris</span>"
+    en: "Energy and Climate Advisor at the Danish Embassy in France<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>Ex-Secretary General of the French Senate</span>",
+    zh: "丹麦驻法大使馆能源与气候顾问<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>前法国参议院秘书长</span>",
+    fr: "Conseiller Énergie et Climat à l'Ambassade du Danemark en France<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>Ex-Secrétaire Général du Sénat français</span>"
   },
   "see.supporters.prof2": {
     en: "Ex-Advisor to the USG, Alliance of Civilizations at the UN<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>Lecturer at Sciences Po Paris &amp; ESCP Business School</span>",
@@ -177,22 +177,22 @@ const translations = {
     fr: "Ex-Conseiller du Sous-Secrétaire Général, Alliance des Civilisations à l'ONU<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>Enseignant à Sciences Po Paris &amp; ESCP Business School</span>"
   },
   "see.supporters.prof3": {
-    en: "Doctoral Researcher in Molecular Quantum Dynamics",
-    zh: "分子量子动力学方向博士研究员",
-    fr: "Chercheur Doctoral en Dynamique Quantique Moléculaire"
+    en: "Doctoral Researcher in Molecular Quantum Dynamics<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>Professor of Physics and Chemistry</span>",
+    zh: "分子量子动力学方向博士研究员<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>物理与化学教授</span>",
+    fr: "Chercheur Doctoral en Dynamique Quantique Moléculaire<br><span style='display:block; margin-top:4px; font-size:0.92em; opacity:0.85;'>Professeur de Physique et Chimie</span>"
   },
   "see.supporters.institutions": { en: "Institutions", zh: "合作机构", fr: "Institutions" },
   "see.supporters.inst1": { en: "Havrais Dire (Sciences Po Le Havre)", zh: "Havrais Dire（巴黎政治学院勒阿弗尔校区）", fr: "Havrais Dire (Sciences Po Le Havre)" },
   "see.supporters.inst1_desc": { 
-      en: "A student association at Sciences Po Le Havre dedicated to promoting student dialogue and intellectual curiosity.", 
-      zh: "巴黎政治学院勒阿弗尔校区的学生社团，致力于推动学生间的思想交流与学术探究。", 
-      fr: "Une association étudiante de Sciences Po Le Havre dédiée à la promotion du dialogue étudiant et de la curiosité intellectuelle." 
+      en: "An association at Sciences Po Le Havre dedicated to promoting dialogue and intellectual curiosity.", 
+      zh: "巴黎政治学院勒阿弗尔校区的社团，致力于推动思想交流与学术探究。", 
+      fr: "Une association de Sciences Po Le Havre dédiée à la promotion du dialogue et de la curiosité intellectuelle." 
   },
   "see.supporters.inst2": { en: "Asia Pacific Research Circle (APRC)", zh: "亚太研究圈（APRC）", fr: "Asia Pacific Research Circle (APRC)" },
   "see.supporters.inst2_desc": {
-      en: "A student-led think tank producing rigorous, policy-relevant research on the Asia-Pacific region.",
-      zh: "一家由学生主导的智库，专注于亚太地区的政策研究。",
-      fr: "Un think tank étudiant produisant des recherches rigoureuses et pertinentes sur la région Asie-Pacifique."
+      en: "A think tank producing rigorous, policy-relevant research on the Asia-Pacific region.",
+      zh: "一家专注于亚太地区政策研究的智库。",
+      fr: "Un think tank produisant des recherches rigoureuses et pertinentes sur la région Asie-Pacifique."
   },
  
   /* ─── Partner ─── */
